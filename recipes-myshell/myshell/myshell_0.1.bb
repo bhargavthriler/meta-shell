@@ -9,12 +9,12 @@ SRC_URI = "git://github.com/bhargavthriler/simple_shell.git"
 S = "${WORKDIR}/git"
 
 do_compile() {
-	${CC} -o myshell main.c
+	make
 }
 
 TARGET_CC_ARCH += "${LDFLAGS}"
 
 do_install() {
 	install -d ${D}${bindir}
-	install -m 0755 myshell ${D}${bindir}
+	install -m 0755 hello_shell ${D}${bindir}
 }
