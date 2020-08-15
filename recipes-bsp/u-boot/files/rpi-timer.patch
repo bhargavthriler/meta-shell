@@ -1,0 +1,10 @@
+diff --git a/configs/rpi_3_defconfig b/configs/rpi_3_defconfig
+index 9b281a4f15..053d36e244 100644
+--- a/configs/rpi_3_defconfig
++++ b/configs/rpi_3_defconfig
+@@ -45,3 +45,4 @@ CONFIG_SYS_WHITE_ON_BLACK=y
+ CONFIG_CONSOLE_SCROLL_LINES=10
+ CONFIG_PHYS_TO_BUS=y
+ CONFIG_OF_LIBFDT_OVERLAY=y
++CONFIG_CMD_TIMER=y
+
