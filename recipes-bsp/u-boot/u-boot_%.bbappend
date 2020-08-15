@@ -1,0 +1,5 @@
+FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+SRC_URI += " file://rpi-timer.patch "
+#FILESEXTRAPATHS_append := "${THISDIR}/files:"
+#SRC_URI_prepend += " file://rpi_3_defconfig;patchdir=${S}/configs "
+#SRC_URI += " file://rpi_3_defconfig;patchdir=${S}/configs "
