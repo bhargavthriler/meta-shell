@@ -3,16 +3,21 @@ DESCRIPTION = "Recipe created by bitbake-layers"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=6e0eb429dbab531d0874038360a879b9"
 
-SRCREV = "17cccb533394f665dacf2a46ec5254ae18860d63"
+#SRCREV = "ce92f43aea4f5ea32858892f446084ea9f2b2a7f"
+SRCREV = "e6562bf2ee2421973c14fac3a4e3a7489db98da3"
 SRC_URI = "git://github.com/bhargavthriler/simple_shell.git"
 
 S = "${WORKDIR}/git"
 
-do_compile() {
-	make
-}
+FILES_${PN} += "${libdir}/"  
 
-TARGET_CC_ARCH += "${LDFLAGS}"
+#do_compile() {
+#	make
+#}
+
+#inherit autotools
+
+#TARGET_CC_ARCH += "${LDFLAGS}"
 
 do_install() {
 	install -d ${D}${bindir}
